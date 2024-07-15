@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker </title>
+    <link rel="stylesheet" href="exp.css">
+</head>
+
+<body>
+    <header class="he">
+        <div class="nav">
+            <ul class="bar">
+                <li class="l1"><a href="">Home</a></li>
+                <li class="l2"><a href="">Help/Support</a></li>
+                <li class="l3"><a href="">About us</a></li>
+
+            </ul>
+            <div class="sec">
+                <li class="l4"><button>Log in</button></li>
+                <li class="l5"><button>Sign up</button></li>
+            </div>
+        </div>
+    </header>
+    <div class="blank">
+
+    </div>
+    <div class="name">
+        Expense Tracker
+
+    </div>
+    <div class="intro">
+        Welcome to ExpenseTracker: Simplifying your finances!
+    </div>
+    <div>.</div>
+    <div class="h">
+        Add your Expenses Below :-
+    </div>
+    <div class="form">
+
+        <form id="expense-form" class="fo">
+            <input type="text" id="name" placeholder="Expense name">
+            <input type="date" id="date" placeholder="Date (YYYY-MM-DD)" required>
+            <input type="text" id="description" placeholder="Description" required>
+            <input type="number" id="amount" placeholder="Amount" required>
+            <input type="text" id="type" placeholder="Type of expense" required>
+
+        </form>
+        <button type="button" id="add-expense">Add Expense</button>
+    </div>
+    <div class="tab">
+        <table id="expense-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Amount</th>
+                    <th>Type of Expensse</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
