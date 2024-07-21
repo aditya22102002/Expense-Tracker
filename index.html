@@ -40,20 +40,26 @@
         <table id="expense-table">
             <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Date</th>
-                    <th>Description</th>
-                    <th>Amount</th>
-                    <th>Type of Expensse</th>
+                    <th>NAME</th>
+                    <th>DATE</th>
+                    <th>DESCRIPTION</th>
+                    <th>AMOUNT</th>
+                    <th>TYPE OF EXPENSES</th>
                 </tr>
-                <tr>
-                    <th><input type="text" id="name" placeholder="Expense name"></th>
+                
+            </thead>
+           <tr>
+            <tr  class="xx">
+                <form  id="expense-form">
+                    <th><input type="text" id="name" placeholder="Name"></th>
                     <th><input type="date" id="date" placeholder="Date (YYYY-MM-DD)" required></th>
                     <th><input type="text" id="description" placeholder="Description" required></th>
                     <th><input type="number" id="amount" placeholder="Amount" required></th>
-                    <th><input type="text" id="type" placeholder="Type of expense" required></th>
-                </tr>
-            </thead>
+                    <th><input type="text" id="type1" placeholder="Type1" required></th>
+                </form>
+               
+            </tr>
+           </tr>
             <tbody>
             </tbody>
         </table>
@@ -67,7 +73,7 @@
             <button type="button" id="del-expense">Delete Expense</button>
         </div>
     </div>
-    
+    <script src="index.js"></script>
 </body>
 
 </html>
