@@ -32,7 +32,7 @@ document.getElementById('add-expense').addEventListener('click', function() {
 
 document.getElementById('del-expense').addEventListener('click', function() {
     const table = document.getElementById('expense-table').getElementsByTagName('tbody')[0];
-    if (table.rows.length > 0) {
+    if (table.rows.length > 1) {
         if (confirm('Are you sure you want to delete the last expense?')) {
             table.deleteRow(table.rows.length - 1);
         }
