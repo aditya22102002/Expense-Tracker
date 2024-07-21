@@ -33,21 +33,8 @@
     <div class="intro">
         Welcome to ExpenseTracker: Simplifying your finances!
     </div>
-    <div>.</div>
     <div class="h">
         Add your Expenses Below :-
-    </div>
-    <div class="form">
-
-        <form id="expense-form" class="fo">
-            <input type="text" id="name" placeholder="Expense name">
-            <input type="date" id="date" placeholder="Date (YYYY-MM-DD)" required>
-            <input type="text" id="description" placeholder="Description" required>
-            <input type="number" id="amount" placeholder="Amount" required>
-            <input type="text" id="type" placeholder="Type of expense" required>
-
-        </form>
-        <button type="button" id="add-expense">Add Expense</button>
     </div>
     <div class="tab">
         <table id="expense-table">
@@ -59,11 +46,28 @@
                     <th>Amount</th>
                     <th>Type of Expensse</th>
                 </tr>
+                <tr>
+                    <th><input type="text" id="name" placeholder="Expense name"></th>
+                    <th><input type="date" id="date" placeholder="Date (YYYY-MM-DD)" required></th>
+                    <th><input type="text" id="description" placeholder="Description" required></th>
+                    <th><input type="number" id="amount" placeholder="Amount" required></th>
+                    <th><input type="text" id="type" placeholder="Type of expense" required></th>
+                </tr>
             </thead>
             <tbody>
             </tbody>
         </table>
     </div>
+    <div class="sub">
+        <div class="ad">
+            <button type="button" id="add-expense">Add Expense</button>
+
+        </div>
+        <div class="del">
+            <button type="button" id="del-expense">Delete Expense</button>
+        </div>
+    </div>
+    
 </body>
 
 </html>
