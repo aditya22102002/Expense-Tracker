@@ -2,10 +2,10 @@ body{
     background-color: rgb(26, 26, 26);
 }
 .he{
-    background: url('e1.webp') no-repeat center center/cover;
+    background: url('e5.jpg') no-repeat center center/cover;
     background-size: 100% 150%;
     position: fixed;
-    width: 100vw;
+    width: 100%;
     height: 40vh;
     top: 0;
     left: 0;
@@ -89,9 +89,9 @@ body{
     color: white;
     margin-top: 2vh;
     margin-left: 0.5vw;
-   font-size: 3vw;
+   font-size: 4vw;
    font-style: italic;
-   font-family: 'Courier New', monospace;
+   font-family: 'Brush Script MT', cursive;
 }
 .intro{
     margin-left: 0px;
@@ -100,77 +100,64 @@ body{
     background-color: rgb(221, 157, 78);
     top: 0;
     color: rgb(64, 10, 10);
-    margin-top: 2vh;
+    margin-top: 1vw;
     margin-left: 0.5vw;
-   font-size: 1vw;
+   font-size: 1.5vw;
    font-family:  monospace;
 }
 .h{
-    font-size: 1vw;
+    font-size: 1.5vw;
     display: inline-block;
     color: white;
-    margin-top: 0.4vw;
+    margin-top: 1vw;
     margin-left: 0.5vw;
-    padding: 0.3vw;
-}
-.form{
-    font-size: 1vw;
-    display: flex;
-    flex-flow: W;
-}
-.fo{
-    font-size: 1vw;
-    padding: 0.5vw;
-    display: flex;
-    flex-flow: wrap;
-    margin: 0.2vw;
-}
-#name{
-    font-size: medium;
-    background-color: rgb(251, 247, 242);
-    margin-right: 2vw;
+    font-family: 'Courier New', monospace;
 }
 
-#date{
-    font-size: medium;
-    background-color: rgb(251, 247, 242);
-    margin-right: 2vw;
-}
-#description{
-    font-size: medium;
-    background-color: rgb(252, 245, 237);
-    margin-right: 2vw;
-}
-#amount{
-    font-size: medium;
-    background-color: rgb(248, 240, 229);
-    margin-right: 2vw;
-}
-#type{
-    font-size: medium;
-    background-color: rgb(251, 247, 242);
-    margin-right: 2vw;
-}
-#add-expense{
-    font-family: Garamond, serif;
-    font-size: medium;
-    background-color: antiquewhite;
-    margin-right: 2vw;
-    border-radius: 0.5vw;
-}
-
-table {
+.tab table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 2vw;
     color: rgb(255, 255, 255);
 }
+@media screen and (max-width: 1080px) {
+    div.tab {
+      font-size: 8px;
+    }
+  }
 
-table, th, td {
-    border: 1px solid #ffffff;
+.tab table, th, td {
+    border: 0.1vw solid #ffffff;
 }
 
-th, td {
-    padding: 15px;
+.tab th, td {
+    padding: 1vw;
     text-align: left;
+}
+.tab input{
+    width: 12vw;
+}
+
+.sub{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+}
+
+.sub button{
+    margin: 2vw 1vw 3vw 3vw;
+    border: 1vw;
+    border-radius: 2vw;
+    font-family: Georgia, serif;
+    padding: 0.5vw;
+    background-color: rgb(206, 198, 198);
+}
+.sub button:hover{
+    border-radius: 0vw;
+    border-color: white;
+    font-family: Georgia, serif;
+    padding: 0.5vw;
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
